@@ -1,11 +1,10 @@
 import React from 'react';
-import Funcao from './hooks/Funcao';
+import Routes from './Routes';
 
 function App() {
   return (
-    <div>
-      <Funcao />
-      
+    <div id='App'>
+      <Routes />
     </div>
   )
 }
