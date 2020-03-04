@@ -1,20 +1,13 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
+import Funcao from './hooks/Funcao';
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    document.title = `Você clicou ${count} vezes`;
-  });
-
   return (
     <div>
-      <p>Você clicou {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Clicke me
-      </button>
+      <Funcao />
+      
     </div>
-  );
+  )
 }
 
 export default App;
