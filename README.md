@@ -13,4 +13,6 @@ Introdução em React Hooks
 
 - Quando você chama useEffect, você está dizendo ao React para executar a sua função de “efeito” após liberar as mudanças para o DOM. 
 
-- Efeitos são declarados dentro do componente, para que eles tenham acesso as suas props e state. 
+- Efeitos são declarados dentro do componente, para que eles tenham acesso as suas props e state.   
+
+- Efeitos também podem opcionalmente especificar como “limpar” (clean up) retornando uma função após a execução deles. 
