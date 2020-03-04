@@ -10,3 +10,7 @@ Introdução em React Hooks
 > useEffect
 
 - O Hook de Efeito, useEffect, adiciona a funcionalidade de executar efeitos colaterais através de um componente funcional. Segue a mesma finalidade do componentDidMount, componentDidUpdate, e componentWillUnmount em classes React, mas unificado em uma mesma API. 
+
+- Quando você chama useEffect, você está dizendo ao React para executar a sua função de “efeito” após liberar as mudanças para o DOM. 
+
+- Efeitos são declarados dentro do componente, para que eles tenham acesso as suas props e state. 
