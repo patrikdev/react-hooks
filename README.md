@@ -22,3 +22,7 @@ Introdução em React Hooks
 - Efeitos são declarados dentro do componente, para que eles tenham acesso as suas props e state.   
 
 - Efeitos também podem opcionalmente especificar como “limpar” (clean up) retornando uma função após a execução deles. 
+
+> useState
+
+- Quando declaramos uma variável com useState, ela retorna um par — um array com dois itens. O primeiro item é o valor atual e o segundo é uma função que nos permite atualizá-la.
