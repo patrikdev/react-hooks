@@ -5,12 +5,16 @@ export default function Funcao() {
 
   useEffect(() => {
     document.title = `Você clicou ${count} vezes`;
-  });
+  }, []);
+
+  function onCountClick() {
+    setCount(count + 1)
+  }
 
   return (
     <div>
       <p>Você clicou {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
+      <button onClick={onCountClick}>
         Clicke me
       </button>
     </div>
