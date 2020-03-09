@@ -7,9 +7,13 @@ export default function Funcao() {
     document.title = `Você clicou ${count} vezes`;
   }, []);
 
+  
+
   function onCountClick() {
     setCount(count + 1)
   }
+
+  console.log(<p></p>)
 
   return (
     <div>
@@ -20,4 +24,6 @@ export default function Funcao() {
     </div>
   );
 }
+
+console.log(Funcao);
 
