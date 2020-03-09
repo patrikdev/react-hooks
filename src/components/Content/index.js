@@ -5,13 +5,13 @@ const Wrapper = styled.div`
   margin: auto;
   max-width: 1000px;
   text-align: center;
+  background: #FAFAFA;
 `;
 
-export default function Content() {
+export default function Content(props) {
   return (
     <Wrapper>
-      <button>Funções</button>
-      <button>Classes</button>
+      {props.children}
     </Wrapper>
   )
 }
