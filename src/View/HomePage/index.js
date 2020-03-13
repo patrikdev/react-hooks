@@ -1,12 +1,12 @@
 import React from 'react';
-import Page from '../../components/Page';
-import Content from '../../components/Content';
+// import Page from '../../components/Page';
 import styled from 'styled-components';
+import Header from '../../components/Header';
+import Main from '../../components/Pages/main';
 
 const S = {
   
   Container: styled.div`
-   
   `,
 
   Button: styled.button`
@@ -21,13 +21,9 @@ const S = {
 
 export default function HomePage(){
   return (
-    <Page>
-      <Content>
-          <S.Container>
-            <S.Button>Funções</S.Button>
-            <S.Button>Classes</S.Button>
-          </S.Container>
-      </Content>
-    </Page>
+    <S.Container>
+        <Header />
+        <Main />
+    </S.Container>
   );
 };
