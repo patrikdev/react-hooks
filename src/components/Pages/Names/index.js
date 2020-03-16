@@ -1,10 +1,9 @@
 import React, { useState,useEffect } from 'react';
 
+export default function Names() {
 
-export default function Main() {
-  
   const [fullname, setFullName] = useState({name:'name', familyName: 'family'})
-  const [title, setTitle] = useState('useEffect() in Hooks');
+  const [title, setTitle] = useState('Initial useEffect and useEstate');
 
   useEffect(() => {
     console.log('useEffect funfando')
@@ -12,8 +11,9 @@ export default function Main() {
   },[])
 
   return (
+
     <div>
-      <h1>Title: {title}</h1>
+      <h1>{title}</h1>
       <h3>Name: {fullname.name}</h3>
       <h3>Family Name: {fullname.familyName}</h3>
     </div>
